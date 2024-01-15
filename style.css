@@ -1,0 +1,42 @@
+:root {
+	background-color: #172554;
+	color: #dbeafe;
+	font-family: "Inter", sans-serif;
+	font-size: 1.3rem;
+}
+
+header {
+	text-align: center;
+	background-color: #dbeafe;
+	color: #172554;
+}
+
+.intro-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: #dbeafe solid 5px;
+}
+
+.container {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+	background-color: #1d4ed8;
+	grid-column: 1;
+	grid-row: 1 / span 2;
+	align-items: center;
+}
