@@ -112,14 +112,15 @@ header {
 	font-weight: lighter;
 	font-size: 2rem;
 	margin: 0;
+	text-decoration: none;
+}
+
+.sidebar a:hover {
+	color: gray;
 }
 
 .sidebar p {
 	font-size: 2rem;
-}
-
-a {
-	text-decoration: none;
 }
 
 .projects > h1 {
@@ -128,6 +129,7 @@ a {
 	padding-top: 200px;
 	grid-column: span 3;
 	text-align: center;
+	align-self: center;
 }
 
 .projects {
@@ -163,12 +165,18 @@ footer {
 	align-items: center;
 	background: radial-gradient(#0f766e, #164e63);
 	font-size: 1.5rem;
+	height: 50px;
 }
 
 .iconify {
-	transition: transform 0.5s ease;
+	transition: transform 0.7s ease;
+}
+
+.iconify a {
+	text-decoration: none;
+	color: #dbeafe;
 }
 
 .iconify:hover {
-	transform: scale(1.2);
+	transform: rotate(720deg);
 }
