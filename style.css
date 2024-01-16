@@ -1,14 +1,21 @@
 :root {
-	background: #0a0a0a;
-	font-family: "Inter", sans-serif;
+	background: #083344;
 	font-size: 1.3rem;
 	color: #e3874f;
 	height: 100vh;
+	font-family: "Montserrat";
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+	src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+	src: url(Fonts/static/Montserrat-ExtraBold.ttf);
 }
 
 header {
-	background-color: #e3874f;
-	color: #172554;
+	background: radial-gradient(#0f766e, #164e63);
+	color: #dbeafe;
 }
 
 .intro-text {
@@ -18,12 +25,61 @@ header {
 	align-items: center;
 	padding: 1px;
 	gap: 20px;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .intro-text p {
-	font-weight: 900;
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-weight: bolder;
+	font-size: 2rem;
 	padding: 100px 200px 0px 200px;
 }
 
@@ -45,7 +101,7 @@ header {
 	background-color: #886a4a;
 	text-align: center;
 	grid-column: 1;
-	grid-row: 1 / span 2;
+	grid-row: 1 / span 3;
 }
 
 .links {
@@ -65,7 +121,7 @@ a {
 }
 
 .projects > h1 {
-	font-weight: 900;
+	font-weight: lighter;
 	font-size: 4rem;
 	grid-column: span 3;
 	text-align: center;
@@ -88,7 +144,7 @@ a {
 
 .images img {
 	border-radius: 12px;
-	width: 350px;
+	width: 300px;
 	height: 280px;
 }
 
